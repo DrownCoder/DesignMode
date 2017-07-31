@@ -19,7 +19,7 @@ public class StrategyActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.strategy_main);
         TopDuck topDuck = new TopDuck();
         test(topDuck,new RocketFly(),new BigQuack());
 

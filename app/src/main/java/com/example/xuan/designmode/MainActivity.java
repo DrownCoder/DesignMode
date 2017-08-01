@@ -13,10 +13,10 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     public static final String[] NAMS = new String[]{
-            "策略模式","观察者模式"
+            "策略模式","观察者模式","装饰者模式"
     };
     public static final String[] ACTIONS = new String[]{
-            "com.action.strategy","com.action.observer"
+            "com.action.strategy","com.action.observer","com.action.decorator"
     };
 
     private RecyclerView mRecyclerView;

@@ -19,13 +19,21 @@
         <activity android:name=".observer.ObserverActivity">
             <intent-filter>
                 <action android:name="com.action.observer" />
-                <category android:name="android.intent.category.DEFAULT"/>
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity android:name=".strategy.StrategyActivity">
             <intent-filter>
                 <action android:name="com.action.strategy" />
-                <category android:name="android.intent.category.DEFAULT"/>
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".decorator.DecoratorActivity">
+            <intent-filter>
+                <action android:name="com.action.decorator" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
     </application>

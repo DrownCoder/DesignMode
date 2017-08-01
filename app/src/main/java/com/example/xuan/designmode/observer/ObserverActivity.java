@@ -2,6 +2,7 @@ package com.example.xuan.designmode.observer;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.ImageView;
 
 import com.example.xuan.designmode.R;
 import com.example.xuan.designmode.observer.observable.IObserable;
@@ -16,7 +17,6 @@ import com.example.xuan.designmode.observer.observer.ObserverJavaB;
 import java.util.Observer;
 
 public class ObserverActivity extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,5 +34,6 @@ public class ObserverActivity extends AppCompatActivity {
         Observer observerJavaA = new ObserverJavaA(observableJava);
         observableJava.notifyAllObserver("this is done by java observer,i wang B is " +
                 "the first ,A is the Last");
+
     }
 }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.xuan.designmode">
+          package="com.example.xuan.designmode">
 
     <application
         android:allowBackup="true"
@@ -11,29 +11,51 @@
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
         <activity android:name=".observer.ObserverActivity">
             <intent-filter>
-                <action android:name="com.action.observer" />
+                <action android:name="com.action.observer"/>
 
-                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
         <activity android:name=".strategy.StrategyActivity">
             <intent-filter>
-                <action android:name="com.action.strategy" />
+                <action android:name="com.action.strategy"/>
 
-                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
         <activity android:name=".decorator.DecoratorActivity">
             <intent-filter>
-                <action android:name="com.action.decorator" />
-                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="com.action.decorator"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".factory.FactoryActivity">
+            <intent-filter>
+                <action android:name="com.action.factory"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".singleton.SingletonActivity">
+            <intent-filter>
+                <action android:name="com.action.singleton"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".order.OrderActivity">
+            <intent-filter>
+                <action android:name="com.action.order"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
     </application>

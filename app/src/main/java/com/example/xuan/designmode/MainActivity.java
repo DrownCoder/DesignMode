@@ -15,14 +15,14 @@ public class MainActivity extends AppCompatActivity {
     public static final String[] NAMS = new String[]{
             "策略模式", "观察者模式", "装饰者模式", "工厂模式",
             "单例模式","命令模式","适配器模式","模板方法模式",
-            "迭代器模式"
+            "迭代器模式","组合模式"
     };
     public static final String[] ACTIONS = new String[]{
             "com.action.strategy", "com.action.observer",
             "com.action.decorator", "com.action.factory",
-            "com.action.singleton","com.action.order",
-            "com.action.adapter","com.action.model",
-            "com.action.iterator"
+            "com.action.singleton", "com.action.order",
+            "com.action.adapter", "com.action.model",
+            "com.action.iterator", "com.action.composite"
     };
 
     private RecyclerView mRecyclerView;

@@ -47,5 +47,6 @@ public class MenuItem extends MenuComponent {
         Log.i("MENUITEM", "desc：" + getDesc());
         Log.i("MENUITEM", "price：" + getPrice());
         Log.i("MENUITEM", "isVegetarian：" + (isVegetarian()?"true":"false"));
+        Log.i("MENUITEM", "----------------------------------------------");
     }
 }

@@ -1,5 +1,7 @@
 package com.example.xuan.designmode.state;
 
+import java.util.Random;
+
 /**
  * Author : xuan.
  * Date : 2017/10/10.
@@ -15,7 +17,7 @@ public class GumballMachine {
         soldOutState = new SoldOutState(this);
         noQuarterState = new NoQuarterState(this);
         hasQuarterState = new HasQuarterState(this);
-        soldOutState = new SoldState(this);
+        soldState = new SoldState(this);
         if (numBalls > 0) {
             curState = noQuarterState;
             count = numBalls;
@@ -40,7 +42,8 @@ public class GumballMachine {
     }
 
     public boolean catchBall() {
-        double a = Math.random();
+        Random random = new Random();
+        int a = random.nextInt(3);
         if (count > 0 && a % 2 == 0) {
             count--;
             return true;

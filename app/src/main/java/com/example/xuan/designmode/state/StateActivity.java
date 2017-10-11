@@ -17,7 +17,7 @@ public class StateActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_state);
         GumballMachine machine = new GumballMachine(2);
-        for(int i= 0;i<3;i++) {
+        for (int i = 0; i < 10; i++) {
             machine.insertQuarter();
             machine.turnCrank();
         }
